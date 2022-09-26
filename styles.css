@@ -1,3 +1,123 @@
-.hello {
-  color: blue;
+html, body, .wrapper {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  width: 40%;
+  background-image: url("assets/halie-west-25xggax4bSA-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  background-color: rgb(245, 245, 245);
+  font-family: sans-serif;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 15%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18vh;
+}
+
+.logo-img {
+  height: 100%;
+}
+
+@font-face {
+  font-family: norse-bold;
+  src: url(assets/Norse-Bold.otf);
+}
+
+.logo-text {
+  color: white;
+  font-size: 100px;
+  font-family: norse-bold, sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.names, .contact, .passwords {
+  display: flex;
+  flex-direction: row;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+input {
+  width: 200px;
+  font-size: 16px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none !important;
+  border: 1px solid blue;
+}
+
+.top-text {
+  width: 400px;
+  margin-top: 15vh;
+}
+
+button {
+  color: white;
+  width: 125px;
+  height: 35px;
+  margin-top: 25px;
+  margin-left: 25px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: olivedrab;
+}
+
+p {
+  font-size: 20px;
+  margin-top: 0;
+  font-weight: 700;
+}
+
+.inputs {
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.inputs, input:focus {
+  box-shadow: rgb(0 0 0 / 15%) 0px 3px 3px 0px;
+}
+
+.top-text, .inputs, .bottom-text {
+  padding-left: 25px;
+}
+
+.error {
+  color: #C13838;
+  font-size: 12px;
 }
